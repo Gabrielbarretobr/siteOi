@@ -1,0 +1,422 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+    font-family: 'Open Sans';
+}
+
+a{
+    color: #00a596;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;;
+}
+
+.container{
+    height: 100%;
+    margin: 0 auto;
+    width: 960px;
+}
+
+/**
+* Navs
+*/
+
+.footer,
+.nav{
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px 5px 0px;
+}
+.footer .footer-left,
+.nav .nav-left{
+    float: left;
+    height: 100%;
+}
+.footer .footer-right,
+.nav .nav-right{
+    float: right;
+    height: 100%;
+}
+.footer .logo,
+.nav--default .logo{
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+.nav--default .nav-form{
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.nav--default .nav-form::-webkit-input-placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.nav--default .nav-form:-moz-placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.nav--default .nav-form::-moz-placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.nav--default .nav-form:-ms-input-placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.footer .logo img,
+.nav--default .logo img{
+    max-height: 100%;
+}
+.footer .footer-button,
+.nav--default .nav-button{
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0px 15px 0px 15px;
+}
+.nav--default .nav-button:hover{
+    transition: background-color 0.5s ease;
+    background: rgba(255,255,255,0.3);
+}
+
+.banner,
+.nav--default{
+    background: #00a596;
+}
+
+/**
+* Footer
+*/
+.footer{
+    background: #8c3c8c;
+}
+
+/**
+* Price
+*/
+.price{
+    font-weight: bold;
+    color: black;
+}
+.price .price-real{
+    font-size: 7em;
+    display: inline-block;
+}
+.price .price-right{
+    display: inline-block;
+}
+.price .price-right .price-cent{
+    display: block;
+    font-size: 3.5em;
+}
+.price .price-right .price-prefix{
+    display: block;
+    font-size: 2em;
+}
+
+.price.small .price-real{
+    font-size: 2em;
+}
+
+.price.small .price-cent{
+    display: block;
+    font-size: 1em;
+}
+
+.price.small .price-prefix{
+    display: block;
+    font-size: 0.5em;
+}
+
+/**
+* Buttons
+*/
+.btn-lg{
+    width: 300px;
+}
+.btn{
+    min-width: 120px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px 15px 10px 15px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.btn.btn--secondary {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f39c12;
+  border: 0;
+  border-bottom: 2px solid #e8930c;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e8930c;
+  box-shadow: inset 0 -2px #e8930c;
+}
+.btn.btn--secondary:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.btn.btn-white{
+    background: white;
+}
+.btn.btn--primary{
+    background: #00a596;
+    color: white;
+}
+.btn.btn--primary-inverse{
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #00a596;
+    color: rgba(255,255,255,0.5);
+}
+
+/**
+* Banner
+*/
+.banner{
+    padding-top: 50px;
+    color: white;
+    height: 400px;
+}
+.banner h1{
+    font-size: 4em;
+}
+
+/**
+* Box
+*/
+
+.content{
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content .box{
+    transform: translateY(-50%);
+}
+.box{
+    display: inline-block;
+    background: white;
+    border: 1px solid #d3d3d3;
+    width: 400px;
+    padding: 20px 0 20px 0;
+    height: 500px;
+}
+.box .box-header{
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+}
+.box .box-body{
+    color: #A6A6A6;
+    font-size: 0.8em;
+    margin: 0 auto;
+    display: block;
+    width: 85%;
+    text-align: left;
+}
+.box ul li{
+    color: black;
+    padding-bottom: 10px;
+}
+.box .box-block{
+    margin-bottom: 20px;
+}
+.box .container{
+    height: 90%;
+    width: 60%;
+    margin: 0 auto;
+}
+.box .box-header h1{
+    font-weight: normal;
+    color: #00a596;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+.box .box-header h2{
+    font-size: 1.1em;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+/**
+* Plans
+*/
+.plans{
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #00a596, #3fc069);
+}
+.plans .tabs{
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+.plans .tabs .tab{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 60px;
+    width: 49.5%;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    color: #00a596;
+    background: white;
+}
+.plans .tabs .tab.active{
+    background: transparent;
+    color: white;
+}
+.plans .tabs .tabs-body{
+    background: white;
+    height: 100%;
+
+}
+.plans .tabs .tabs-body .container{
+    width: 80%;
+    padding: 20px 0 20px;
+}
+
+.plans .tabs .tabs-header{
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/**
+* Helpers
+*/
+
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+
+.center-block{
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; }
+
+/**
+* Colors
+*/
+.text-primary{
+    color: #00a596;
+}
+.text-muted{
+    color: #A6A6A6;
+}
+
+.hide{
+    display: none;
+}
+
+/**
+* Table
+*/
+table{
+    width: 100%;
+}
+table, tr, td{
+    min-width: 150px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+td{
+    border-bottom: 1px dashed #d3d3d3;
+}
+
+
+@font-face {
+    font-family: 'simplon';
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonoi-headline-webfont.eot') format('opentype');
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonoi-headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonoi-headline-webfont.woff') format('woff'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonoi-headline-webfont.ttf') format('opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonoi-headline-webfont.svg#simplon_oiheadline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'simplon_bpbold';
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-bold-webfont.eot') format('opentype');
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-bold-webfont.woff') format('woff'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-bold-webfont.ttf') format('opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-bold-webfont.svg#simplon_bpbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'simplon_bpmedium';
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-medium-webfont.eot') format('opentype');
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-medium-webfont.woff') format('woff'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-medium-webfont.ttf') format('opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-medium-webfont.svg#simplon_bpmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'simplon_bpregular';
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-regular-webfont.eot') format('opentype');
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-regular-webfont.woff') format('woff'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-regular-webfont.ttf') format('opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-regular-webfont.svg#simplon_bpregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'simplon_bplight';
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-light.eot') format('opentype');
+    src: url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-light.eot?#iefix') format('embedded-opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-light.woff') format('woff'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-light.ttf') format('opentype'),
+         url('http://www.oi.com.br/ArquivosEstaticos/oi/fonts/simplonbp-light.svg#simplon_bplight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
